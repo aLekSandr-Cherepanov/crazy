@@ -4426,12 +4426,8 @@ h3 {
 }
 
 .wrapper-block {
-	/*display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;*/
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	width: 515px;
 }
 
 @media (max-width: 500px) {

@@ -4353,22 +4353,28 @@ section#why-we-six {
 
 
 .basic_information_course {
-	padding: 20px;
+	padding: 30px;
 	background-color: #e9e2dc;
 }
 
 .block_course {
-	width: 50%;
+	max-width: 540px;
+    max-height: 680px;
+	margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 
 .block_course_title {
 	background-color: #242E2D;
-    padding: 15px;
+	padding: 27px 105px;
+	text-align: center;
+	height: 105px;
 }
 
 h3 {
 	color: #fff;
+	font-size: 24px;
 }
 
 .wrapper-price {
@@ -4379,18 +4385,28 @@ h3 {
 
 .block_text {
 	background-color: #242E2D;
-    padding: 15px;
-    width: 40%;
-	color: #fff;
+    /*width: 40%;*/
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    width: 200px;
 }
 
 .photo {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .block_price {
 	width: 80%;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+	font-size: 18px;
+    font-weight: 700;
 }
 
 .block_button {
@@ -4398,6 +4414,15 @@ h3 {
     background-color: #FF6600;
 	color: #fff;
 	text-align: center;
+	max-width: 410px;
+    margin: 0 auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    border-radius: 20px;
+    font-size: 20px;
 }
 
 .wrapper-price-description {
@@ -4410,10 +4435,54 @@ h3 {
 	padding: 25px;
 	margin-bottom: 35px;
 }
+@media (max-width: 500px) {
+	h3 {
+		font-size: 19px;
+	}
+	.block_course {
+		margin-left: 0;
+	}
+
+	.block_course_title {
+		padding: 27px 40px;
+	}
+
+	.block_button {
+		padding: 17px 0px;
+		border-radius: 13px;
+	}
+
+	.block_text {
+		font-size: 13px;
+	}
+
+	.block_price {
+		font-size: 15px;
+	}
+}
 
 .price-time {
 	display: flex;
     justify-content: space-between;
+}
+
+.price {
+	display: flex;
+}
+
+.time {
+	display: flex;
+}
+
+.main-photo {
+	position: relative;
+}
+
+.back-photo {
+	position: absolute;
+    background-color: #242e2d;
+    opacity: 0.6;
+    z-index: 111;
 }
 
 .wrapper-block {
